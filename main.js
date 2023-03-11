@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 // Esse tipo de comentário que estão antes de todas as funções são chamados de JSdoc,
 // experimente passar o mouse sobre o nome das funções e verá que elas possuem descrições!
 
@@ -7,6 +8,49 @@ const items = document.querySelector('.items');
 const cart = document.querySelector('.cart__items');
 const emptyBtn = document.querySelector('.empty-cart');
 let storaged = [];
+
+const fetchItem = async (id) => {
+  if (!id || id === undefined) throw new Error('You must provide an url');
+  const url = `https://api.mercadolibre.com/items/${id}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  return data;
+};
+
+if (typeof module !== 'undefined') {
+  module.exports = {
+    fetchItem,
+  };
+}
+
+const fetchProducts = async (computador) => {
+  if (!computador || computador !== 'computador') { throw new Error('You must provide an url'); }
+  const url = `https://api.mercadolibre.com/sites/MLB/search?q=${computador}`;
+  const resp = await fetch(url);
+  const data = await resp.json();
+  console.log(data);
+  return data;
+};
+
+if (typeof module !== 'undefined') {
+  module.exports = {
+    fetchProducts,
+  };
+}
+
+const getSavedCartItems = () => JSON.parse(localStorage.getItem('cartItems'));
+
+if (typeof module !== 'undefined') {
+  module.exports = getSavedCartItems;
+}
+
+const saveCartItems = (e) => {
+  localStorage.setItem('cartItems', JSON.stringify(e));
+};
+
+if (typeof module !== 'undefined') {
+  module.exports = saveCartItems;
+}
 
 /**
  * Função responsável por criar e retornar o elemento de imagem do produto.
