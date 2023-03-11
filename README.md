@@ -1,9 +1,5 @@
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
-  <a href="https://github.com/AlexandreRocha-10/shoppingcart">
-    <img src="public/shoppingcart.png" alt="Logo" width="80" height="80">
-  </a>
 
 <h3 align="center">Shopping Cart Project</h3>
 
