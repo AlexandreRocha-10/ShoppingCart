@@ -140,6 +140,18 @@ body {
   overflow-y: scroll;
 }
 
+.cart .cart__items .cart__item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 2px solid rgb(234, 234, 233);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
 .empty-cart {
   width: 170px;
   height: 35px;
