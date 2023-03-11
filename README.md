@@ -17,14 +17,9 @@
   a partir do consumo de uma API do Mercado Livre, onde desenvolvemos e utilizamos o Jest para testes, localStorage e HoF's.
 </p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- CONTACT -->
 ## Contact
 
 Alexandre Rocha - alexandre.e.rocha@gmail.com
 
 Project Link: [https://shoppingcart-weld.vercel.app/](https://shoppingcart-weld.vercel.app/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
