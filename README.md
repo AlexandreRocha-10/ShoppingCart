@@ -10,7 +10,7 @@
 
 <p> 
   Esse é um projeto desenvolvido com Javascript vanilla em que construímos um site de ecommerce 
-  a partir do consumo de uma API do Mercado Livre, onde desenvolvemos e utilizamos o Jest para testes, localStorage e HoF's.
+  a partir do consumo de uma API do Mercado Livre, onde utilizamos o Jest para testes, e desenvolvemos o conhecimento de localStorage e HoF's.
 </p>
 
 <!-- CONTACT -->
